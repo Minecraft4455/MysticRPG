@@ -10,18 +10,19 @@ import cpw.mods.fml.relauncher.SideOnly;
 
 public class MysticStone extends Block {
 
-	public MysticStone(int id) {
-		
-		super(id, Material.rock);
-		this.setCreativeTab(CreativeTabs.tabBlock);
-		
-	}
-	
-	@SideOnly(Side.CLIENT)
-	public void registerIcons(IconRegister icon) {
-		
-		blockIcon = icon.registerIcon(MysticModInfo.MODID + ":MysticStone");
-		
-	}
-	
+    public MysticStone(int id) {
+
+        super(id, Material.rock);
+        this.setCreativeTab(CreativeTabs.tabBlock);
+
+    }
+
+    @Override
+    @SideOnly(Side.CLIENT)
+    public void registerIcons(IconRegister icon) {
+
+        blockIcon = icon.registerIcon(MysticModInfo.MODID + ":MysticStone");
+
+    }
+
 }

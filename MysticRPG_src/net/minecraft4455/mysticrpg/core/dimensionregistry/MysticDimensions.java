@@ -5,13 +5,14 @@ import net.minecraftforge.common.DimensionManager;
 
 public class MysticDimensions {
 
-	public static final int YirawiaID = 3;
-	
-	public static void init() {
-		
-		DimensionManager.registerProviderType(YirawiaID, WorldProviderYirawia.class, true);
-		DimensionManager.registerDimension(YirawiaID, YirawiaID);
-		
-	}
-	
+    public static final int YirawiaID = 3;
+
+    public static void init() {
+
+        DimensionManager.registerProviderType(YirawiaID,
+                WorldProviderYirawia.class, true);
+        DimensionManager.registerDimension(YirawiaID, YirawiaID);
+
+    }
+
 }

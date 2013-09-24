@@ -10,18 +10,19 @@ import cpw.mods.fml.relauncher.SideOnly;
 
 public class YirawiaBlock extends Block {
 
-	public YirawiaBlock(int id) {
-		
-		super(id, Material.rock);
-		this.setCreativeTab(CreativeTabs.tabBlock);
-		
-	}
-	
-	@SideOnly(Side.CLIENT)
-	public void registerIcons(IconRegister icon) {
-		
-		blockIcon = icon.registerIcon(MysticModInfo.MODID + ":YirawiaBlock");
-		
-	}
-	
+    public YirawiaBlock(int id) {
+
+        super(id, Material.rock);
+        this.setCreativeTab(CreativeTabs.tabBlock);
+
+    }
+
+    @Override
+    @SideOnly(Side.CLIENT)
+    public void registerIcons(IconRegister icon) {
+
+        blockIcon = icon.registerIcon(MysticModInfo.MODID + ":YirawiaBlock");
+
+    }
+
 }

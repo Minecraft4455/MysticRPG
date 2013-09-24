@@ -9,18 +9,20 @@ import cpw.mods.fml.relauncher.SideOnly;
 
 public class BlackMercySubstance extends Item {
 
-	public BlackMercySubstance(int id) {
-		
-		super(id);
-		this.setCreativeTab(CreativeTabs.tabMaterials);
-		
-	}
-	
-	@SideOnly(Side.CLIENT)
-	public void registerIcons(IconRegister icon) {
-		
-		itemIcon = icon.registerIcon(MysticModInfo.MODID + ":BlackMercySubstance");
-		
-	}
-	
+    public BlackMercySubstance(int id) {
+
+        super(id);
+        this.setCreativeTab(CreativeTabs.tabMaterials);
+
+    }
+
+    @Override
+    @SideOnly(Side.CLIENT)
+    public void registerIcons(IconRegister icon) {
+
+        itemIcon = icon.registerIcon(MysticModInfo.MODID
+                + ":BlackMercySubstance");
+
+    }
+
 }

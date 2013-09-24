@@ -10,19 +10,20 @@ import cpw.mods.fml.relauncher.SideOnly;
 
 public class YirawiaDirt extends Block {
 
-	public YirawiaDirt(int id) {
-		
-		super(id, Material.ground);
-		this.setCreativeTab(CreativeTabs.tabBlock);
-		this.setStepSound(soundGravelFootstep);
-		
-	}
-	
-	@SideOnly(Side.CLIENT)
-	public void registerIcons(IconRegister icon) {
-		
-		blockIcon = icon.registerIcon(MysticModInfo.MODID + ":YirawiaDirt");
-		
-	}
-	
+    public YirawiaDirt(int id) {
+
+        super(id, Material.ground);
+        this.setCreativeTab(CreativeTabs.tabBlock);
+        this.setStepSound(soundGravelFootstep);
+
+    }
+
+    @Override
+    @SideOnly(Side.CLIENT)
+    public void registerIcons(IconRegister icon) {
+
+        blockIcon = icon.registerIcon(MysticModInfo.MODID + ":YirawiaDirt");
+
+    }
+
 }

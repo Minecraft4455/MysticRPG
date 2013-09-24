@@ -5,17 +5,17 @@ import net.minecraft4455.mysticrpg.core.blocks.MysticBlocks;
 
 public class YirawiaPlains extends BiomeGenBase {
 
-	public YirawiaPlains(int id) {
-		
-		super(id);
-		this.topBlock = (byte) MysticBlocks.YirawiaGrass.blockID;
-		this.fillerBlock = (byte) MysticBlocks.YirawiaDirt.blockID;
-		this.spawnableCaveCreatureList.clear();
-		this.spawnableCreatureList.clear();
-		this.spawnableMonsterList.clear();
-		this.spawnableWaterCreatureList.clear();
-		this.setBiomeName("Yirawia Plains");
-		
-	}
-	
+    public YirawiaPlains(int id) {
+
+        super(id);
+        topBlock = (byte) MysticBlocks.YirawiaGrass.blockID;
+        fillerBlock = (byte) MysticBlocks.YirawiaDirt.blockID;
+        spawnableCaveCreatureList.clear();
+        spawnableCreatureList.clear();
+        spawnableMonsterList.clear();
+        spawnableWaterCreatureList.clear();
+        this.setBiomeName("Yirawia Plains");
+
+    }
+
 }

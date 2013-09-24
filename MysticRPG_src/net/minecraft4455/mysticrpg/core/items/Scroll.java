@@ -9,18 +9,19 @@ import cpw.mods.fml.relauncher.SideOnly;
 
 public class Scroll extends Item {
 
-	public Scroll(int id) {
-		
-		super(id);
-		this.setCreativeTab(CreativeTabs.tabMaterials);
-		
-	}
-	
-	@SideOnly(Side.CLIENT)
-	public void registerIcons(IconRegister icon) {
-		
-		itemIcon = icon.registerIcon(MysticModInfo.MODID + ":Scroll");
-		
-	}
-	
+    public Scroll(int id) {
+
+        super(id);
+        this.setCreativeTab(CreativeTabs.tabMaterials);
+
+    }
+
+    @Override
+    @SideOnly(Side.CLIENT)
+    public void registerIcons(IconRegister icon) {
+
+        itemIcon = icon.registerIcon(MysticModInfo.MODID + ":Scroll");
+
+    }
+
 }
