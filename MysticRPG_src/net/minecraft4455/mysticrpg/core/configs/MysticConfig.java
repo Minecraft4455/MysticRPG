@@ -7,6 +7,7 @@ import java.lang.reflect.Field;
 import net.minecraftforge.common.Configuration;
 
 public class MysticConfig {
+    
 	@Retention(RetentionPolicy.RUNTIME)
 	private static @interface CfgBool {
 	}

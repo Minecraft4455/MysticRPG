@@ -2,6 +2,8 @@ package net.minecraft4455.mysticrpg;
 
 import java.util.logging.Logger;
 
+import pizzana.lib.common.VersionCheck;
+
 import net.minecraft4455.mysticrpg.core.biomes.MysticBiomes;
 import net.minecraft4455.mysticrpg.core.blocks.MysticBlocks;
 import net.minecraft4455.mysticrpg.core.configs.MysticConfig;
@@ -32,6 +34,8 @@ public class MysticRPG {
 	
 	private static Logger logger;
 	
+	public static final String URL = "https://raw.github.com/Minecraft4455/MysticRPG/master/versioncheck/";
+	
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent e) {
 		
@@ -39,6 +43,8 @@ public class MysticRPG {
 		e.getModMetadata().version = MysticModInfo.VERSION;
 		e.getModMetadata().description = MysticModInfo.DESCRIPTION;
 		e.getModMetadata().authorList.add(MysticModInfo.AUTHOR);
+		
+		VersionCheck.updateCheck(MysticModInfo.NAME, MysticModInfo.VERSION, URL);
 		
 		logger = Logger.getLogger(MysticModInfo.MODID);
 		logger.setParent(FMLLog.getLogger());
