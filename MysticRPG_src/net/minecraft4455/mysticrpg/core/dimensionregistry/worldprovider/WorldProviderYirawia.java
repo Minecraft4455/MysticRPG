@@ -1,6 +1,5 @@
 package net.minecraft4455.mysticrpg.core.dimensionregistry.worldprovider;
 
-import net.minecraft.entity.Entity;
 import net.minecraft.util.ChunkCoordinates;
 import net.minecraft.util.MathHelper;
 import net.minecraft.util.Vec3;
@@ -31,11 +30,6 @@ public class WorldProviderYirawia extends WorldProvider {
 
 	public int getAverageGroundLevel() {
 		return 0;
-	}
-
-	@Override
-	public Vec3 getSkyColor(Entity cameraEntity, float partialTicks) {
-		return this.worldObj.getWorldVec3Pool().getVecFromPool(0, 1, 2);
 	}
 
 	@SideOnly(Side.CLIENT)
@@ -167,24 +161,22 @@ public class WorldProviderYirawia extends WorldProvider {
 
 	@SideOnly(Side.CLIENT)
 	public Vec3 getFogColor(float par1, float par2) {
-		 float f2 = MathHelper.cos(par1 * (float)Math.PI * 2.0F) * 2.0F + 0.5F;
+		float f2 = MathHelper.cos(par1 * (float) Math.PI * 2.0F) * 2.0F + 0.5F;
 
-	        if (f2 < 0.0F)
-	        {
-	            f2 = 0.0F;
-	        }
+		if (f2 < 0.0F) {
+			f2 = 0.0F;
+		}
 
-	        if (f2 > 1.0F)
-	        {
-	            f2 = 1.0F;
-	        }
+		if (f2 > 1.0F) {
+			f2 = 1.0F;
+		}
 
-	        float f3 = 0.7529412F;
-	        float f4 = 0.84705883F;
-	        float f5 = 1.0F;
-	        f3 *= f2 * 0.94F + 0.06F;
-	        f4 *= f2 * 0.94F + 0.06F;
-	        f5 *= f2 * 0.91F + 0.09F;
-		return this.worldObj.getWorldVec3Pool().getVecFromPool(f3, f4, f5);
+		float f3 = 0.7529412F;
+		float f4 = 0.84705883F;
+		float f5 = 1.0F;
+		f3 *= f2 * 0.94F + 0.06F;
+		f4 *= f2 * 0.94F + 0.06F;
+		f5 *= f2 * 0.91F + 0.09F;
+		return this.worldObj.getWorldVec3Pool().getVecFromPool((double) f3,(double) f4, (double) f5);
 	}
 }

@@ -66,10 +66,6 @@ public class ChunkProviderYirawia implements IChunkProvider {
 		this.mobSpawnerNoise = new NoiseGeneratorOctaves(this.rand, 8);
 	}
 
-	/**
-	 * Generates the shape of the terrain for the chunk though its all stone
-	 * though the water is frozen if the temperature is low enough
-	 */
 	public void generateTerrain(int par1, int par2, byte[] par3ArrayOfByte) {
 		byte b0 = 4;
 		byte b1 = 16;

@@ -7,7 +7,7 @@ import net.minecraft4455.mysticrpg.core.biomes.MysticBiomes;
 
 public class YirawiaGenLayerBiomes extends GenLayer {
 
-	protected BiomeGenBase[] allowedBiomes = { MysticBiomes.YirawiaPlains };
+	protected BiomeGenBase[] allowedBiomes = { MysticBiomes.YirawiaPlains, MysticBiomes.YirawiaDesert };
 
 	public YirawiaGenLayerBiomes(long seed, GenLayer genlayer) {
 		super(seed);
