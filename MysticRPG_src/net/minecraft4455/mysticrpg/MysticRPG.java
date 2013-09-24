@@ -52,15 +52,14 @@ public class MysticRPG {
                 e.getSuggestedConfigurationFile());
         MysticConfig.load(config);
 
-        new MysticItems();
         MysticItems.init();
-        new MysticBlocks();
+        
         MysticBlocks.init();
-        new MysticRecipes();
+        
         MysticRecipes.init();
-        new MysticDimensions();
+        
         MysticDimensions.init();
-        new MysticBiomes();
+        
         MysticBiomes.init();
 
     }
