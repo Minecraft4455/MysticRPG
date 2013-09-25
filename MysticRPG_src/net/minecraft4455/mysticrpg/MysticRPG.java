@@ -48,7 +48,7 @@ public class MysticRPG {
          */
 
         VersionCheck
-                .updateCheck(MysticModInfo.NAME, MysticModInfo.VERSION, URL);
+                .updateCheckMRPG(MysticModInfo.NAME, MysticModInfo.VERSION, URL);
         
         TickRegistry.registerTickHandler(new ClientTickHandler(), Side.CLIENT);
 
