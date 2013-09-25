@@ -1,0 +1,3 @@
+[submodule "PizzAnaLib"]
+	path = PizzAnaLib
+	url = https://github.com/PizzAna/PizzAnaLib.git
