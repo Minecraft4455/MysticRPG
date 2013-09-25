@@ -1,3 +1,3 @@
-[submodule "PizzAnaLib"]
-	path = PizzAnaLib
+[submodule "pizzanalib"]
+	path = pizzanalib
 	url = https://github.com/PizzAna/PizzAnaLib.git
