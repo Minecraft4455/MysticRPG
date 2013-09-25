@@ -51,15 +51,11 @@ public class MysticRPG {
         final Configuration config = new Configuration(
                 e.getSuggestedConfigurationFile());
         MysticConfig.load(config);
-
+        
         MysticItems.init();
-        
         MysticBlocks.init();
-        
         MysticRecipes.init();
-        
         MysticDimensions.init();
-        
         MysticBiomes.init();
 
     }
