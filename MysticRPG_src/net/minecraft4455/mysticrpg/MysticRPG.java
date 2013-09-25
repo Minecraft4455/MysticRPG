@@ -37,10 +37,12 @@ public class MysticRPG {
     @EventHandler
     public void preInit(FMLPreInitializationEvent e) {
 
-        e.getModMetadata().name = MysticModInfo.NAME;
-        e.getModMetadata().version = MysticModInfo.VERSION;
-        e.getModMetadata().description = MysticModInfo.DESCRIPTION;
-        e.getModMetadata().authorList.add(MysticModInfo.AUTHOR);
+        /*
+         * e.getModMetadata().name = MysticModInfo.NAME;
+         * e.getModMetadata().version = MysticModInfo.VERSION;
+         * e.getModMetadata().description = MysticModInfo.DESCRIPTION;
+         * e.getModMetadata().authorList.add(MysticModInfo.AUTHOR);
+         */
 
         VersionCheck
                 .updateCheck(MysticModInfo.NAME, MysticModInfo.VERSION, URL);
@@ -51,7 +53,7 @@ public class MysticRPG {
         final Configuration config = new Configuration(
                 e.getSuggestedConfigurationFile());
         MysticConfig.load(config);
-        
+
         MysticItems.init();
         MysticBlocks.init();
         MysticRecipes.init();

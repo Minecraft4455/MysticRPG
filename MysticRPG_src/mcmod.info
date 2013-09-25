@@ -1,0 +1,21 @@
+[
+{
+  "modid": "mysticrpg",
+  "name": "MysticRPG",
+  "description": "MysticRPG a ultimate Minecraft conversion full of adventures!",
+  "version": "@VERSION@",
+  "url": "https://github.com/Minecraft4455/MysticRPG",
+  "updateUrl": "",
+  "authorList": [
+    "Minecraft4455",
+    "PizzAna"
+  ],
+  "credits": "By Minecraft4455, also some code by PizzAna",
+  "logoFile": "",
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+  ]
+}
+]
