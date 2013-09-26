@@ -36,8 +36,11 @@ public class MysticBlocks {
                 .setUnlocalizedName("YirawiaPortal");
         YirawiaBlock = new YirawiaBlock(MysticConfig.YirawiaBlockID)
                 .setUnlocalizedName("YirawiaBlock");
-        ViriaFire = new ViriaFire(MysticConfig.ViriaFireID)
-                .setUnlocalizedName("ViriaFire");
+        /*
+         * TODO disabling this because it's causing crashes and that's annoying
+         * while testing some things ViriaFire = new
+         * ViriaFire(MysticConfig.ViriaFireID) .setUnlocalizedName("ViriaFire");
+         */
 
     }
 
