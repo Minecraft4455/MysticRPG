@@ -17,7 +17,7 @@ public class MysticItems {
     public static void init() {
 
         initItems();
-        addNames();
+        // addNames();
 
     }
 
@@ -40,14 +40,15 @@ public class MysticItems {
 
     }
 
+    @SuppressWarnings("unused")
     private static void addNames() {
 
-        LanguageRegistry.addName(Scroll, "Scroll");
-        LanguageRegistry.addName(BlackMercySeed, "Black Mercy Seed");
-        LanguageRegistry.addName(BlackMercySubstance, "Black Mercy Substance");
-        LanguageRegistry.addName(NatureScroll, "Nature Scroll");
-        LanguageRegistry.addName(GreenInk, "Green Ink");
-        LanguageRegistry.addName(GreenInkWitgFeather, "Green Ink With Feather");
+        // LanguageRegistry.addName(Scroll, "Scroll");
+        // LanguageRegistry.addName(BlackMercySeed, "Black Mercy Seed");
+        // LanguageRegistry.addName(BlackMercySubstance, "Black Mercy Substance");
+        // LanguageRegistry.addName(NatureScroll, "Nature Scroll");
+        // LanguageRegistry.addName(GreenInk, "Green Ink");
+        // LanguageRegistry.addName(GreenInkWitgFeather, "Green Ink With Feather");
 
     }
 

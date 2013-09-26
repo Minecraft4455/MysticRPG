@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties version="1.0">
+
+	<entry key="item.Scroll.name">Scroll</entry>
+	<entry key="item.BlackMercySeed.name">Black Mercy Seed</entry>
+	<entry key="item.BlackMercySubstance.name">Black Mercy Substance</entry>
+	<entry key="item.NatureScroll.name">Nature Scroll</entry>
+	<entry key="item.GreenInk.name">Green Ink</entry>
+	<entry key="item.GreenInkWitgFeather.name">Green Ink With Feather</entry>
+	
+	<entry key="tile.BlackMercy.name">Black Mercy</entry>
+	<entry key="tile.MysticStone.name">Stone</entry>
+	<entry key="tile.YirawiaDirt.name">Yirawia Dirt</entry>
+	<entry key="tile.YirawiaGrass.name">Yirawia Grass</entry>
+	<entry key="tile.MysticSand.name">Sand</entry>
+	<entry key="tile.YirawiaPortal.name">Yirawia Portal</entry>
+	<entry key="tile.YirawiaBlock.name">Yirawia Block</entry>
+	<entry key="tile.ViriaFire.name">Viria Fire</entry>
+
+</properties>

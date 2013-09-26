@@ -20,7 +20,7 @@ public class MysticBlocks {
 
         initBlocks();
         registerBlocks();
-        addNames();
+        // addNames();
 
     }
 
@@ -54,16 +54,17 @@ public class MysticBlocks {
 
     }
 
+    @SuppressWarnings("unused")
     private static void addNames() {
 
-        LanguageRegistry.addName(BlackMercy, "Black Mercy");
-        LanguageRegistry.addName(MysticStone, "Stone");
-        LanguageRegistry.addName(YirawiaDirt, "Yirawia Dirt");
-        LanguageRegistry.addName(YirawiaGrass, "Yirawia Grass");
-        LanguageRegistry.addName(MysticSand, "Sand");
-        LanguageRegistry.addName(YirawiaPortal, "Yirawia Portal");
-        LanguageRegistry.addName(YirawiaBlock, "Yirawia Block");
-        LanguageRegistry.addName(ViriaFire, "Viria Fire");
+        // LanguageRegistry.addName(BlackMercy, "Black Mercy");
+        // LanguageRegistry.addName(MysticStone, "Stone");
+        // LanguageRegistry.addName(YirawiaDirt, "Yirawia Dirt");
+        // LanguageRegistry.addName(YirawiaGrass, "Yirawia Grass");
+        // LanguageRegistry.addName(MysticSand, "Sand");
+        // LanguageRegistry.addName(YirawiaPortal, "Yirawia Portal");
+        // LanguageRegistry.addName(YirawiaBlock, "Yirawia Block");
+        // LanguageRegistry.addName(ViriaFire, "Viria Fire");
 
     }
 
