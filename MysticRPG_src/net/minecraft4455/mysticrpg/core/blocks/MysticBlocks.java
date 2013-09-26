@@ -53,7 +53,7 @@ public class MysticBlocks {
         GameRegistry.registerBlock(MysticSand, "MysticSand");
         GameRegistry.registerBlock(YirawiaPortal, "YirawiaPortal");
         GameRegistry.registerBlock(YirawiaBlock, "YirawiaBlock");
-        GameRegistry.registerBlock(ViriaFire, "ViriaFire");
+        // GameRegistry.registerBlock(ViriaFire, "ViriaFire");
 
     }
 
