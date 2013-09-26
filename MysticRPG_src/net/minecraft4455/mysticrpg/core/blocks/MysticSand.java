@@ -5,9 +5,9 @@ import java.util.Random;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IconRegister;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.item.EntityFallingSand;
 import net.minecraft.world.World;
+import net.minecraft4455.mysticrpg.MysticRPG;
 import net.minecraft4455.mysticrpg.core.info.MysticModInfo;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -18,7 +18,7 @@ public class MysticSand extends Block {
 
     public MysticSand(int par1) {
         super(par1, Material.sand);
-        this.setCreativeTab(CreativeTabs.tabBlock);
+        this.setCreativeTab(MysticRPG.tab);
         this.setStepSound(soundSandFootstep);
     }
 

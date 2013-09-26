@@ -2,6 +2,8 @@ package net.minecraft4455.mysticrpg;
 
 import java.util.logging.Logger;
 
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.ItemStack;
 import net.minecraft4455.mysticrpg.core.biomes.MysticBiomes;
 import net.minecraft4455.mysticrpg.core.blocks.MysticBlocks;
 import net.minecraft4455.mysticrpg.core.configs.MysticConfig;
@@ -10,6 +12,7 @@ import net.minecraft4455.mysticrpg.core.info.MysticModInfo;
 import net.minecraft4455.mysticrpg.core.items.MysticItems;
 import net.minecraft4455.mysticrpg.core.proxys.CommonProxy;
 import net.minecraft4455.mysticrpg.core.recipes.MysticRecipes;
+import net.minecraft4455.mysticrpg.core.util.CreativeTabsMRPG;
 import net.minecraftforge.common.Configuration;
 import pizzana.lib.common.VersionCheck;
 import pizzana.lib.sided.ClientTickHandler;
@@ -36,8 +39,10 @@ public class MysticRPG {
 
     private static Logger logger;
 
+    public static CreativeTabs tab;
+
     public static final String URL = "https://raw.github.com/Minecraft4455/MysticRPG/master/versioncheck/";
-    
+
     private static final String[] languages = new String[] { "en_US.xml" };
 
     @EventHandler
@@ -50,9 +55,9 @@ public class MysticRPG {
          * e.getModMetadata().authorList.add(MysticModInfo.AUTHOR);
          */
 
-        VersionCheck
-                .updateCheckMRPG(MysticModInfo.NAME, MysticModInfo.VERSION, URL);
-        
+        VersionCheck.updateCheckMRPG(MysticModInfo.NAME, MysticModInfo.VERSION,
+                URL);
+
         TickRegistry.registerTickHandler(new ClientTickHandler(), Side.CLIENT);
 
         logger = Logger.getLogger(MysticModInfo.MODID);
@@ -62,13 +67,18 @@ public class MysticRPG {
                 e.getSuggestedConfigurationFile());
         MysticConfig.load(config);
 
+        tab = new CreativeTabsMRPG(CreativeTabs.getNextID(), "tabMysticRPG");
+
         MysticItems.init();
         MysticBlocks.init();
         MysticRecipes.init();
-        MysticDimensions.init();
+        MysticDimensions.init(); // TODO Localize biomes and dimensions
         MysticBiomes.init();
-        
-        LangUtil.addNames("/assets/" + MysticModInfo.MODID + "/lang/", languages);
+
+        CreativeTabsMRPG.setDisplayStack(new ItemStack(MysticItems.Scroll));
+
+        LangUtil.addNames("/assets/" + MysticModInfo.MODID + "/lang/",
+                languages);
 
     }
 

@@ -4,13 +4,13 @@ import java.util.Random;
 
 import net.minecraft.block.BlockBreakable;
 import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.item.ItemMonsterPlacer;
 import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
+import net.minecraft4455.mysticrpg.MysticRPG;
 import net.minecraft4455.mysticrpg.core.dimensionregistry.MysticDimensions;
 import net.minecraft4455.mysticrpg.core.dimensionregistry.teleporter.YirawiaTeleporter;
 import net.minecraft4455.mysticrpg.core.info.MysticModInfo;
@@ -27,7 +27,7 @@ public class YirawiaPortal extends BlockBreakable {
         this.setHardness(-1.0F);
         this.setStepSound(soundGlassFootstep);
         this.setLightValue(0.75F);
-        this.setCreativeTab(CreativeTabs.tabBlock);
+        this.setCreativeTab(MysticRPG.tab);
 
     }
 

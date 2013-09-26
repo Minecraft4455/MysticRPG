@@ -3,7 +3,6 @@ package net.minecraft4455.mysticrpg.core.items;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft4455.mysticrpg.core.configs.MysticConfig;
-import cpw.mods.fml.common.registry.LanguageRegistry;
 
 public class MysticItems {
 
@@ -45,10 +44,12 @@ public class MysticItems {
 
         // LanguageRegistry.addName(Scroll, "Scroll");
         // LanguageRegistry.addName(BlackMercySeed, "Black Mercy Seed");
-        // LanguageRegistry.addName(BlackMercySubstance, "Black Mercy Substance");
+        // LanguageRegistry.addName(BlackMercySubstance,
+        // "Black Mercy Substance");
         // LanguageRegistry.addName(NatureScroll, "Nature Scroll");
         // LanguageRegistry.addName(GreenInk, "Green Ink");
-        // LanguageRegistry.addName(GreenInkWitgFeather, "Green Ink With Feather");
+        // LanguageRegistry.addName(GreenInkWitgFeather,
+        // "Green Ink With Feather");
 
     }
 

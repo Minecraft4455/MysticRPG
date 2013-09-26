@@ -2,6 +2,8 @@
 <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 <properties version="1.0">
 
+	<entry key="itemGroup.tabMysticRPG">MysticRPG</entry>
+
 	<entry key="item.Scroll.name">Scroll</entry>
 	<entry key="item.BlackMercySeed.name">Black Mercy Seed</entry>
 	<entry key="item.BlackMercySubstance.name">Black Mercy Substance</entry>

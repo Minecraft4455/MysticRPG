@@ -5,13 +5,13 @@ import java.util.Random;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockFire;
 import net.minecraft.client.renderer.texture.IconRegister;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
 import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.Icon;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
+import net.minecraft4455.mysticrpg.MysticRPG;
 import net.minecraft4455.mysticrpg.core.info.MysticModInfo;
 import net.minecraftforge.common.ForgeDirection;
 import cpw.mods.fml.relauncher.Side;
@@ -25,7 +25,7 @@ public class ViriaFire extends BlockFire {
     public ViriaFire(int par1) {
         super(par1);
         setTickRandomly(true);
-        setCreativeTab(CreativeTabs.tabMaterials);
+        setCreativeTab(MysticRPG.tab);
     }
 
     @Override

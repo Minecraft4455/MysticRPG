@@ -2,11 +2,11 @@ package net.minecraft4455.mysticrpg.core.items;
 
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.texture.IconRegister;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemSeeds;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
+import net.minecraft4455.mysticrpg.MysticRPG;
 import net.minecraft4455.mysticrpg.core.info.MysticModInfo;
 import net.minecraftforge.common.EnumPlantType;
 import net.minecraftforge.common.ForgeDirection;
@@ -24,7 +24,7 @@ public class BlackMercySeed extends ItemSeeds {
         super(par1, par2, par3);
         blockType = par2;
         soilBlockID = par3;
-        this.setCreativeTab(CreativeTabs.tabMaterials);
+        this.setCreativeTab(MysticRPG.tab);
     }
 
     @Override

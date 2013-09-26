@@ -3,7 +3,6 @@ package net.minecraft4455.mysticrpg.core.blocks;
 import net.minecraft.block.Block;
 import net.minecraft4455.mysticrpg.core.configs.MysticConfig;
 import cpw.mods.fml.common.registry.GameRegistry;
-import cpw.mods.fml.common.registry.LanguageRegistry;
 
 public class MysticBlocks {
 
