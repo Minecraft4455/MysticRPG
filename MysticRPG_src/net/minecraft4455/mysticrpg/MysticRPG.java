@@ -37,6 +37,8 @@ public class MysticRPG {
     private static Logger logger;
 
     public static final String URL = "https://raw.github.com/Minecraft4455/MysticRPG/master/versioncheck/";
+    
+    private static final String[] languages = new String[] { "en_US.xml" };
 
     @EventHandler
     public void preInit(FMLPreInitializationEvent e) {
@@ -66,7 +68,7 @@ public class MysticRPG {
         MysticDimensions.init();
         MysticBiomes.init();
         
-        LangUtil.addNames("/assets/" + MysticModInfo.MODID + "/lang/", new String[] {"en_US.xml"});
+        LangUtil.addNames("/assets/" + MysticModInfo.MODID + "/lang/", languages);
 
     }
 
