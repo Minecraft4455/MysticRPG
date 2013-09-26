@@ -13,6 +13,7 @@ import net.minecraft4455.mysticrpg.core.recipes.MysticRecipes;
 import net.minecraftforge.common.Configuration;
 import pizzana.lib.common.VersionCheck;
 import pizzana.lib.sided.ClientTickHandler;
+import pizzana.lib.util.LangUtil;
 import cpw.mods.fml.common.FMLLog;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
@@ -64,6 +65,8 @@ public class MysticRPG {
         MysticRecipes.init();
         MysticDimensions.init();
         MysticBiomes.init();
+        
+        LangUtil.addNames("/assets/" + MysticModInfo.MODID + "/lang/", new String[] {"en_US.xml"});
 
     }
 
