@@ -19,27 +19,20 @@ public class MysticBlocks {
 
         initBlocks();
         registerBlocks();
-        // addNames();
 
     }
 
     private static void initBlocks() {
 
-        BlackMercy = new BlackMercy(MysticConfig.BlackMercyID)
-                .setUnlocalizedName("BlackMercy");
-        MysticStone = new MysticStone(200).setUnlocalizedName("MysticStone");
-        YirawiaDirt = new YirawiaDirt(201).setUnlocalizedName("YirawiaDirt");
-        YirawiaGrass = new YirawiaGrass(202).setUnlocalizedName("YirawiaGrass");
-        MysticSand = new MysticSand(203).setUnlocalizedName("MysticSand");
-        YirawiaPortal = new YirawiaPortal(MysticConfig.YirawiaPortalID)
-                .setUnlocalizedName("YirawiaPortal");
-        YirawiaBlock = new YirawiaBlock(MysticConfig.YirawiaBlockID)
-                .setUnlocalizedName("YirawiaBlock");
-        /*
-         * TODO disabling this because it's causing crashes and that's annoying
-         * while testing some things ViriaFire = new
-         * ViriaFire(MysticConfig.ViriaFireID) .setUnlocalizedName("ViriaFire");
-         */
+		BlackMercy = new BlackMercy(MysticConfig.BlackMercyID).setUnlocalizedName("BlackMercy");
+		MysticStone = new MysticStone(200).setUnlocalizedName("MysticStone");
+		YirawiaDirt = new YirawiaDirt(201).setUnlocalizedName("YirawiaDirt");
+		YirawiaGrass = new YirawiaGrass(202).setUnlocalizedName("YirawiaGrass");
+		MysticSand = new MysticSand(203).setUnlocalizedName("MysticSand");
+		YirawiaPortal = new YirawiaPortal(MysticConfig.YirawiaPortalID).setUnlocalizedName("YirawiaPortal");
+		YirawiaBlock = new YirawiaBlock(MysticConfig.YirawiaBlockID).setUnlocalizedName("YirawiaBlock");
+		ViriaFire = new ViriaFire(MysticConfig.ViriaFireID).setUnlocalizedName("ViriaFire");
+
 
     }
 
@@ -52,21 +45,7 @@ public class MysticBlocks {
         GameRegistry.registerBlock(MysticSand, "MysticSand");
         GameRegistry.registerBlock(YirawiaPortal, "YirawiaPortal");
         GameRegistry.registerBlock(YirawiaBlock, "YirawiaBlock");
-        // GameRegistry.registerBlock(ViriaFire, "ViriaFire");
-
-    }
-
-    @SuppressWarnings("unused")
-    private static void addNames() {
-
-        // LanguageRegistry.addName(BlackMercy, "Black Mercy");
-        // LanguageRegistry.addName(MysticStone, "Stone");
-        // LanguageRegistry.addName(YirawiaDirt, "Yirawia Dirt");
-        // LanguageRegistry.addName(YirawiaGrass, "Yirawia Grass");
-        // LanguageRegistry.addName(MysticSand, "Sand");
-        // LanguageRegistry.addName(YirawiaPortal, "Yirawia Portal");
-        // LanguageRegistry.addName(YirawiaBlock, "Yirawia Block");
-        // LanguageRegistry.addName(ViriaFire, "Viria Fire");
+        GameRegistry.registerBlock(ViriaFire, "ViriaFire");
 
     }
 

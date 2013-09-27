@@ -12,11 +12,7 @@ import net.minecraft4455.mysticrpg.core.info.MysticModInfo;
 import net.minecraft4455.mysticrpg.core.items.MysticItems;
 import net.minecraft4455.mysticrpg.core.proxys.CommonProxy;
 import net.minecraft4455.mysticrpg.core.recipes.MysticRecipes;
-import net.minecraft4455.mysticrpg.core.util.CreativeTabsMRPG;
 import net.minecraftforge.common.Configuration;
-import pizzana.lib.common.VersionCheck;
-import pizzana.lib.sided.ClientTickHandler;
-import pizzana.lib.util.LangUtil;
 import cpw.mods.fml.common.FMLLog;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
@@ -62,11 +58,8 @@ public class MysticRPG {
         MysticItems.init();
         MysticBlocks.init();
         MysticRecipes.init();
-        MysticDimensions.init(); // TODO Localize biomes and dimensions/ should be fine i like stuff being organized!
+        MysticDimensions.init(); // TODO Localize biomes and dimensions
         MysticBiomes.init();
-
-        CreativeTabsMRPG.setDisplayStack(new ItemStack(MysticItems.Scroll));
-
         LangUtil.addNames("/assets/" + MysticModInfo.MODID + "/lang/", languages);
 
     }
