@@ -33,10 +33,9 @@ public class MysticRPG {
 
     @Instance(MysticModInfo.MODID)
     public static MysticRPG instance;
-
     @SidedProxy(clientSide = MysticModInfo.CLIENTPROXY, serverSide = MysticModInfo.COMMONPROXY)
     public static CommonProxy proxy;
-
+    
     private static Logger logger;
 
     public static CreativeTabs tab;
@@ -48,13 +47,6 @@ public class MysticRPG {
     @EventHandler
     public void preInit(FMLPreInitializationEvent e) {
 
-        /*
-         * e.getModMetadata().name = MysticModInfo.NAME;
-         * e.getModMetadata().version = MysticModInfo.VERSION;
-         * e.getModMetadata().description = MysticModInfo.DESCRIPTION;
-         * e.getModMetadata().authorList.add(MysticModInfo.AUTHOR);
-         */
-
         VersionCheck.updateCheckMRPG(MysticModInfo.NAME, MysticModInfo.VERSION,
                 URL);
 
@@ -62,23 +54,20 @@ public class MysticRPG {
 
         logger = Logger.getLogger(MysticModInfo.MODID);
         logger.setParent(FMLLog.getLogger());
-
         final Configuration config = new Configuration(
                 e.getSuggestedConfigurationFile());
         MysticConfig.load(config);
-
         tab = new CreativeTabsMRPG(CreativeTabs.getNextID(), "tabMysticRPG");
 
         MysticItems.init();
         MysticBlocks.init();
         MysticRecipes.init();
-        MysticDimensions.init(); // TODO Localize biomes and dimensions
+        MysticDimensions.init(); // TODO Localize biomes and dimensions/ should be fine i like stuff being organized!
         MysticBiomes.init();
 
         CreativeTabsMRPG.setDisplayStack(new ItemStack(MysticItems.Scroll));
 
-        LangUtil.addNames("/assets/" + MysticModInfo.MODID + "/lang/",
-                languages);
+        LangUtil.addNames("/assets/" + MysticModInfo.MODID + "/lang/", languages);
 
     }
 
